@@ -8,4 +8,4 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: npm install
-      - run: npx jest
+      - run: node ./node_modules/jest/bin/jest.js
