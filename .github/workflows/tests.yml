@@ -2,20 +2,17 @@ name: Testing
 run-name: ${{ github.actor }} is testing 🚀
 on: [push]
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
-  Explore-GitHub-Actions:
+  Explore-GitHub-Actions: 
     runs-on: ubuntu-latest
-    steps:
+    steps: 
       - name: Check out repository code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
