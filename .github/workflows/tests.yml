@@ -2,7 +2,7 @@ name: Testing
 run-name: ${{ github.actor }} is testing 🚀
 on: [push]
 jobs:
-  build-and-test:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
